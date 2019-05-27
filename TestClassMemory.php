@@ -15,7 +15,7 @@ while ($objCount <= 1000000) {
     
         $usage = $memAfter - $memBefore;
     
-        echo 'Used ' . $usage . ' bytes' . PHP_EOL;
+        echo 'Used ' . $usage . ' bytes - ' . $objCount . PHP_EOL;
     }
     
     $objCount++;
