@@ -7,6 +7,6 @@ class SimpleClass
     
     public function __destruct()
     {
-        echo 'Object desctructed' . PHP_EOL;
+//        echo 'Object desctructed' . PHP_EOL;
     }
 }

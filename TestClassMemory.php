@@ -8,7 +8,7 @@ $objCount = 1;
 while ($objCount <= 1000000) {
     $newObj = new SimpleClass();
     $newObj->value = rand(0, 1000);
-    $newObj->self = &$newObj;
+    $newObj->self = $newObj;
     
     if (0 === $objCount % 500) {
         $memAfter = memory_get_usage();
