@@ -12,24 +12,15 @@
 </p>
 
 ## Информация для проверяющего
-* выбран фреймворк `Symfony 4`
-* консольная команда находится [здесь](src/Command/UsersStatsCommand.php)
-* текст для cron находится [здесь](build/production/cron.txt)
-* скрипт сборки проекта находится [здесь](build/production/build.xml)
-* Скрипт сборки проекта должен запускаться из папки с проектом примерно так:
-    ```
-  php ./vendor/phing/phing/bin/phing -f ./build/production/build.xml -Dapp.destination.path=/Users/eugem/Developer/PHP/php-3HW03.prod -Dapp.domain=test.com -Dapp.db_driver=mysql -Dapp.db_user=eug -Dapp.db_password=123 -Dapp.db_host=php-3HW03.mac -Dapp.db_port=8889 -Dapp.db_name=php3hw03
+* решение для первого задания находится [здесь](TestArrayMemory.php)
+* запуск из папки проекта производится при помощи консольной команды:
   ```
-  Следующие параметры должны быть обязательно указаны:
-  * `-Dapp.destination.path`
-  * `-Dapp.db_driver`
-  * `-Dapp.db_user`
-  * `-Dapp.db_password`
-  * `-Dapp.db_host`
-  * `-Dapp.db_port`
-  * `-Dapp.db_name`
-* применена дополнительная настройка web-сервера nginx:
- <img src="/screens/nginx.png" width="50%">
+  php TestArrayMemory.php
+  ```
+* на php 7.3.3 один элемент массива занимает примерно 33.558608 байт. Стандартных 128 Мбайт приложению хватило
+* для задачи №2 была использована версия php 5.6.40. Пришлось увеличить `memory_limit`  до 256 Мбайт, так как один элемент массива в ней занимает примерно 144.389096 байт
+
+
 
 ## Main functionality
 * PSR-standards
