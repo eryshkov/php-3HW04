@@ -7,7 +7,6 @@
 
 <p align="center">
 <img src="https://img.shields.io/badge/PHP-7.3-orange.svg" alt="PHP-7.3"/>
-<img src="https://img.shields.io/badge/Symfony-4.2.8-blue.svg">
 <img src="https://img.shields.io/badge/licence-MIT-lightgray.svg" alt="Licence MIT"/>
 </p>
 
